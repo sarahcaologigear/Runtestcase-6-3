@@ -1,0 +1,10 @@
+com\auto\report\StepListener.class
+com\auto\utils\Constants.class
+com\auto\utils\JsonUtils.class
+com\auto\report\AllureReport.class
+com\auto\utils\FileUtils.class
+com\auto\model\UserModel.class
+com\auto\utils\FakerUtils.class
+com\auto\page\browser\GooglePage.class
+com\auto\utils\Assertion.class
+com\auto\data\enums\Navigation.class

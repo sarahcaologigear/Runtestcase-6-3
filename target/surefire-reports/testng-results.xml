@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Browser Suite" duration-ms="7565" started-at="2023-03-09T10:42:47 ICT" finished-at="2023-03-09T10:42:54 ICT">
+    <groups>
+    </groups>
+    <test name="Sample tests" duration-ms="7565" started-at="2023-03-09T10:42:47 ICT" finished-at="2023-03-09T10:42:54 ICT">
+      <class name="com.auto.test.browser.GoogleTests">
+        <test-method status="PASS" signature="beforeAll(java.lang.String)[pri:0, instance:com.auto.test.browser.GoogleTests@127e70c5]" name="beforeAll" is-config="true" duration-ms="6445" started-at="2023-03-09T10:42:47 ICT" finished-at="2023-03-09T10:42:53 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeAll -->
+        <test-method status="PASS" signature="TestCase()[pri:0, instance:com.auto.test.browser.GoogleTests@127e70c5]" name="TestCase" duration-ms="292" started-at="2023-03-09T10:42:53 ICT" finished-at="2023-03-09T10:42:54 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase -->
+        <test-method status="PASS" signature="afterAll()[pri:0, instance:com.auto.test.browser.GoogleTests@127e70c5]" name="afterAll" is-config="true" duration-ms="669" started-at="2023-03-09T10:42:54 ICT" finished-at="2023-03-09T10:42:54 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAll -->
+      </class> <!-- com.auto.test.browser.GoogleTests -->
+    </test> <!-- Sample tests -->
+  </suite> <!-- Browser Suite -->
+</testng-results>
