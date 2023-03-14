@@ -2,10 +2,11 @@ package com.auto.data.enums;
 
 public enum Navigation {
     HOME("Home"),
-    INVOICES("Invoices"),
-    SETTINGS("Settings"),
+    REGISTER("Register"),
+    LOGIN("Login"),
     ITEMS("Items"),
-    EXPENSES("Expenses");
+    EXPENSES("Expenses"),
+    ERROR_MESSAGE_TC02("You must specify a username.");
 
     private String value;
 

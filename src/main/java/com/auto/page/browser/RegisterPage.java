@@ -1,5 +1,6 @@
 package com.auto.page.browser;
 
+import com.auto.data.enums.Navigation;
 import com.logigear.element.Element;
 
 public class RegisterPage extends GeneralPage{
@@ -10,24 +11,29 @@ public class RegisterPage extends GeneralPage{
     private final Element btnSubmit = new Element(".//input[@type='submit']");
     private  Element msgSuccessRegister =new Element(".//div[@id='content']/p");
 
-    public void gotoTabRegister() {
-        this.tabRegister.click();
+
+    public Element getTab(Navigation nameTab) {
+        return new Element(tabRegister, nameTab.value());
     }
 
-    public void enterEmail(String Email){
-        this.txtEmail.enter(Email);
+    public void goToMenuTab(Navigation nameTab) {
+        this.getTab(nameTab).click();
     }
 
-    public void enterPassword(String Password){
-        this.txtPassword.enter(Password);
+    public void enterEmail(String email){
+        this.txtEmail.enter(email);
+    }
+
+    public void enterPassword(String password){
+        this.txtPassword.enter(password);
     }
 
     public void enterConfirmPassword(String confirmPassword){
         this.txtConfirmPassword.enter(confirmPassword);
     }
 
-    public void enterPassport(String Passport){
-        this.txtPassport.enter(Passport);
+    public void enterPassport(String passport){
+        this.txtPassport.enter(passport);
     }
 
     public void clickRegisterButton(){
