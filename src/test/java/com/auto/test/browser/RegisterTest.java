@@ -1,5 +1,6 @@
 package com.auto.test.browser;
 
+import com.auto.data.enums.Navigation;
 import com.auto.page.browser.RegisterPage;
 import com.auto.utils.Constants;
 import org.testng.Assert;
@@ -9,7 +10,7 @@ public class RegisterTest extends BrowserTestBase {
     RegisterPage registerPage = new RegisterPage();
     @Test
     public void TC01_REG(){
-        registerPage.setTabRegister();
+        registerPage.goToMenuTab(Navigation.REGISTER);
         registerPage.enterEmail("cancaothi98855112335@gmail.com");
         registerPage.enterPassword("Caocan11@");
         registerPage.enterConfirmPassword("Caocan11@");

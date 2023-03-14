@@ -20,12 +20,9 @@ public class BrowserTestBase {
         platform = java.util.Optional.ofNullable(platform).orElse("firefox");
         log.info("Running test on {}", platform);
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--start-maximized");
-        options.addArguments("--disable-extensions");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-gpu");
+        options.addArguments("--start-maximized");
         config = Configuration.defaultConfig(platform);
-//        config.setStartMaximized(true);
+        config.setStartMaximized(true);
         config.setBaseUrl("http://www.railwayb2.somee.com/");
         config.setCapabilities(options);
         Selaium.setConfig(config);
