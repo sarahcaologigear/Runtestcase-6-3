@@ -12,5 +12,6 @@ public class LoginTest extends BrowserTestBase {
             loginPage.enterUsername("caocanhq@gmail.com");
             loginPage.enterPassword("Caocan98@");
             loginPage.clickOnLoginButton();
+
     }
 }
