@@ -1,8 +1,6 @@
 package com.auto.page.browser;
 
-import com.auto.utils.Constants;
 import com.logigear.element.Element;
-import org.openqa.selenium.By;
 
 public class RegisterPage extends GeneralPage{
     private final Element txtEmail = new Element(".//input[@id='email']");
@@ -12,7 +10,7 @@ public class RegisterPage extends GeneralPage{
     private final Element btnSubmit = new Element(".//input[@type='submit']");
     private  Element msgSuccessRegister =new Element(".//div[@id='content']/p");
 
-    public void setTabRegister() {
+    public void gotoTabRegister() {
         this.tabRegister.click();
     }
 
@@ -24,8 +22,8 @@ public class RegisterPage extends GeneralPage{
         this.txtPassword.enter(Password);
     }
 
-    public void enterConfirmPassword(String ConfirmPassword){
-        this.txtConfirmPassword.enter(ConfirmPassword);
+    public void enterConfirmPassword(String confirmPassword){
+        this.txtConfirmPassword.enter(confirmPassword);
     }
 
     public void enterPassport(String Passport){

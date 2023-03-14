@@ -9,7 +9,7 @@ public class RegisterTest extends BrowserTestBase {
     RegisterPage registerPage = new RegisterPage();
     @Test
     public void TC01_REG(){
-        registerPage.setTabRegister();
+        registerPage.gotoTabRegister();
         registerPage.enterEmail("cancaothi98855112335@gmail.com");
         registerPage.enterPassword("Caocan11@");
         registerPage.enterConfirmPassword("Caocan11@");

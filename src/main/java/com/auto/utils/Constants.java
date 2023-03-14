@@ -1,5 +1,6 @@
 package com.auto.utils;
 
+import com.auto.page.browser.LoginPage;
 import com.logigear.element.Element;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
